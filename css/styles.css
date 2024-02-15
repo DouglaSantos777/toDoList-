@@ -1,0 +1,179 @@
+/* Geral */
+
+*{
+padding: 0;
+margin: 0;
+font-family: sans-serif;
+color: rgb(246, 246, 246);
+box-sizing: border-box; /* inputs nao passarem da largura maxima */
+
+}
+
+body{
+height: 100vh;  
+background-image: url(/imgs/Beatrice.full.3290944.jpg);
+background-position:center; /* posicinada no centro */
+background-size: cover; /*cobre toda tela */ 
+background-repeat: no-repeat;
+ /* A altura da janela de visualização */
+
+}
+
+button{
+background-color: white;
+color: #102f5e;
+border: 2px solid #102f5e;
+padding: .3rem .6rem; /* altura, largura */
+font-size: 1rem;
+cursor: pointer; /* mostra maozinha quando coloca no botao*/
+display: flex; /* */
+justify-content: center;
+align-items: center;
+transition: 0.4s; /* transição pro hover */
+}
+
+button:hover{
+background-color: red;
+color: white;
+
+}
+
+button:hover > i { /* pro icone dentro do botao */
+color: white;
+
+}
+
+button i{
+color: black;
+font-weight: bold;
+pointer-events: none; /* quando clicar no icone é como se tivesse clicado no botao */
+}
+
+input, select{
+padding: .25rem 0.5rem;
+
+}
+
+.hide{
+display: none;
+
+}
+
+/* */
+.todo-container{
+max-width: 450px;
+margin: 3rem auto ;
+background-color: #371B1A;
+padding: 1.5rem;
+border-radius: 15px;
+}
+
+.todo-container header{
+text-align: center;
+padding: 0 1rem 1rem;
+border-bottom: 1px solid #ccc;
+
+}
+
+#todo-form, #edit-form{
+padding: 1rem;
+border-bottom: 1px solid #ccc;
+
+}
+
+#todo-form p,
+#edit-form p{
+margin-bottom: .5rem;
+font-weight: bold;
+}
+
+.form-control{
+display: flex; /* os boteos ficam do lado da caixa de texto */
+
+}
+
+.form-control input{
+margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+margin-top: 1rem;
+
+}
+
+#toolbar {
+padding: 1rem;
+border-bottom: 1px solid #ccc;
+display: flex;
+}
+
+#toolbar h4{
+margin-bottom: .5rem;
+
+}
+
+#search{
+border-right: 1px solid #ccc;
+padding-right: 1rem;
+margin-right: 1rem;
+width: 65%;
+display: flex;
+flex-direction: column;
+}
+
+#search form{
+display: flex;
+}
+
+#search input{
+width: 100%;
+margin-right: 0.3rem;
+
+}
+
+#filter{
+width: 35%;
+display: flex;
+flex-direction: column;
+}
+
+#filter select{
+flex: 1;
+color: black;
+}
+
+option{
+color: black;
+
+}
+
+/* */
+.todo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 1rem;
+border-bottom: 1px solid #ddd;
+transition: .3s;
+}
+
+.todo h3{
+flex:1;
+font-size:0.9rem;
+
+}
+
+.todo button {
+margin-left:  0.4rem;
+}
+
+.done{
+background-color: #395169;
+
+}
+.done h3{
+color: #fff;
+text-decoration: line-through; /* uma linha corta o texto */
+font-style: italic;
+
+}
